@@ -1,11 +1,17 @@
-<h1>Personajes de Harry Potter</h1>
+<h1 class="text-center mb-5">Personajes de Harry Potter</h1>
 
-<ul>
-  <% @characters.each do |character| %>
-    <li>
-      <strong>Nombre:</strong> <%= character.name %> <br>
-      <strong>Locación:</strong> <%= character.location %> <br>
-      <strong>Casa:</strong> <%= character.house %>
-    </li>
-  <% end %>
-</ul>
+<div class="container">
+  <div class="row">
+    <% @characters.each do |character| %>
+      <div class="col-md-3 col-sm-6 mb-4"> <!-- 4 personajes por fila en pantallas medianas y grandes, 2 en pantallas pequeñas -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><%= character.name %></h5>
+            <p class="card-text"><strong>Locación:</strong> <%= character.location %></p>
+            <p class="card-text"><strong>Casa:</strong> <%= character.house %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
