@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: howarts_rails
+    env: ruby
+    buildCommand: "bundle install && bundle exec rake db:migrate"
+    startCommand: "bundle exec rails server"
+    plan: free
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: RAILS_MASTER_KEY
+        sync: false
