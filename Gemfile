@@ -57,4 +57,4 @@ group :test do
 end
 gem 'faker', '~> 3.0'
 gem 'bootstrap', '~> 5.0.2'
-gem 'popper_js', '~> 2.9.2'
+gem 'popper_js', '~> 2.11.8'

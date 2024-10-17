@@ -161,7 +161,7 @@ GEM
       racc
     pg (1.5.8)
     pg (1.5.8-x64-mingw-ucrt)
-    popper_js (2.9.3)
+    popper_js (2.11.8)
     psych (5.1.2)
       stringio
     public_suffix (6.0.1)
@@ -308,7 +308,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   pg (~> 1.1)
-  popper_js (~> 2.9.2)
+  popper_js (~> 2.11.8)
   puma (>= 5.0)
   rails (~> 7.2.1, >= 7.2.1.1)
   rubocop-rails-omakase
