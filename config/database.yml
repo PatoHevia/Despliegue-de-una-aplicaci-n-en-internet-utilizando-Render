@@ -1,0 +1,25 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: howarts_rails_4mu7_user
+  password: h8KdBmJDqKRfLLkPRHHNJos2gGjrRCAK
+  host: dpg-cs87p3tsvqrc73bll4p0-a.oregon-postgres.render.com
+  port: 5432
+  database: howarts_rails_4mu7
+
+development:
+  <<: *default
+  database: howarts_rails_4mu7
+
+test:
+  <<: *default
+  database: howarts_rails_test
+
+production:
+  <<: *default
+  database: howarts_rails_4mu7
+  username: howarts_rails_4mu7_user
+  password: <%= ENV['HOWARTS_RAILS_DATABASE_PASSWORD'] %>
+  host: dpg-cs87p3tsvqrc73bll4p0-a.oregon-postgres.render.com
+  port: 5432
