@@ -55,6 +55,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
-gem 'faker', '~> 3.0'
+gem 'faker', '~> 3.5'
 gem 'bootstrap', '~> 5.0.2'
 gem 'popper_js', '~> 2.9.2'
